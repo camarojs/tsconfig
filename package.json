@@ -1,7 +1,19 @@
 {
   "name": "@camaro/tsconfig",
   "version": "1.0.1",
-  "description": "A base tsconfig.",
+  "description": "A shareable ts config.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camarojs/tsconfig.git"
+  },
+  "keywords": [
+    "camaro",
+    "tsconfig"
+  ],
   "author": "Dunn",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camarojs/tsconfig/issues"
+  },
+  "homepage": "https://github.com/camarojs/tsconfig#readme"
 }
