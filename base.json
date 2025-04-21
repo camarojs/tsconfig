@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    // Type Checking
+    /* Type Checking */
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "noFallthroughCasesInSwitch": true,
@@ -11,13 +11,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
-    // Modules
+    /* Modules */
     "module": "ESNext",
     "moduleResolution": "bundler",
-    // Interop Constraints
+    /* Interop Constraints */
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    // Language and Environment
+    /* Language and Environment */
     "target": "ESNext",
     "lib": [
       "ESNext"
