@@ -1,0 +1,8 @@
+{
+  "name": "@camaro/tsconfig",
+  "version": "1.2.0",
+  "description": "Shared TypeScript configuration presets for the Camaro monorepo.",
+  "keywords": ["typescript", "tsconfig", "config", "shared", "monorepo", "camaro"],
+  "author": "Dunn <wg0121@outlook.com>",
+  "license": "MIT"
+}
