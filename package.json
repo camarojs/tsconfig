@@ -4,7 +4,8 @@
   "description": "Shared TypeScript configuration presets for the Camaro monorepo.",
   "scripts": {
     "build": "",
-    "test": ""
+    "test": "",
+    "type-check": ""
   },
   "keywords": [
     "typescript",
