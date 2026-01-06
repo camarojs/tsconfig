@@ -14,6 +14,8 @@
     /* Modules */
     "module": "nodenext",
     "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "rewriteRelativeImportExtensions": true,
     /* Emit */
     "inlineSourceMap": true,
     /* Interop Constraints */
