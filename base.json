@@ -19,6 +19,7 @@
     /* Emit */
     "inlineSourceMap": true,
     /* Interop Constraints */
+    "erasableSyntaxOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     /* Language and Environment */
