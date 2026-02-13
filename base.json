@@ -22,6 +22,7 @@
     "erasableSyntaxOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
     /* Language and Environment */
     "target": "ESNext",
     "lib": [
