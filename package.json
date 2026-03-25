@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/camarojs/camaro/issues"
   },
-  "homepage": "https://github.com/camarojs/camaro#readme"
+  "homepage": "https://github.com/camarojs/camaro#readme",
+  "peerDependencies": {
+    "typescript": "^6.0.2"
+  }
 }

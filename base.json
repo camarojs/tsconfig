@@ -10,21 +10,14 @@
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strict": true,
     /* Modules */
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "resolveJsonModule": true,
     "rewriteRelativeImportExtensions": true,
     /* Emit */
     "inlineSourceMap": true,
     /* Interop Constraints */
     "erasableSyntaxOnly": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true,
     /* Language and Environment */
-    "target": "ESNext",
     "lib": [
       "ESNext"
     ],
