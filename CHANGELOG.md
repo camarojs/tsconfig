@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/camarojs/camaro/compare/tsconfig-v1.3.0...tsconfig-v1.4.0) (2026-04-01)
+
+
+### Features
+
+* **tsconfig:** add peerDependencies for TypeScript and update configuration ([798b974](https://github.com/camarojs/camaro/commit/798b97434675c64f01e4c9989f78634a0e6ce879))
+
 ## [1.3.0](https://github.com/camarojs/camaro/compare/tsconfig-v1.2.0...tsconfig-v1.3.0) (2026-02-13)
 
 
