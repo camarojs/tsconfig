@@ -2,11 +2,6 @@
   "name": "@camaro/tsconfig",
   "version": "1.4.0",
   "description": "Shared TypeScript configuration presets for the Camaro monorepo.",
-  "scripts": {
-    "build": "",
-    "test": "",
-    "type-check": ""
-  },
   "keywords": [
     "typescript",
     "tsconfig",
