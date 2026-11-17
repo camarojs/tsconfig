@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.5.0](https://github.com/camarojs/tsconfig/compare/tsconfig-v1.4.0...tsconfig-v1.5.0) (2026-11-17)
+
+
+### Features
+
+* **tsconfig:** add peerDependencies for TypeScript and update configuration ([a4b8c1b](https://github.com/camarojs/tsconfig/commit/a4b8c1bdc20847338b4ef6ddb8a82f25302c1de5))
+* **tsconfig:** enable erasableSyntaxOnly option ([4ea7248](https://github.com/camarojs/tsconfig/commit/4ea7248e27d4d599600e61d1f7714cbe8a6032bf))
+* **tsconfig:** enable JSON module resolution and relative import rewriting ([#27](https://github.com/camarojs/tsconfig/issues/27)) ([1996183](https://github.com/camarojs/tsconfig/commit/1996183159c1c05f5c1a39ce3219f902d0e354a4))
+* **tsconfig:** enable verbatimModuleSyntax in base configuration ([#42](https://github.com/camarojs/tsconfig/issues/42)) ([816a289](https://github.com/camarojs/tsconfig/commit/816a289d5781332162e93d204354bd1a7fb58eee))
+
 ## [1.4.0](https://github.com/camarojs/camaro/compare/tsconfig-v1.3.0...tsconfig-v1.4.0) (2026-04-01)
 
 
