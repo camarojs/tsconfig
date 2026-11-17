@@ -60,6 +60,11 @@ For code executed directly by Node.js, set `"module": "NodeNext"` in your projec
 
 `lib: ["ESNext"]` provides library type declarations. It does not change `target` or add runtime polyfills.
 
+## Publishing
+
+Merge the release-please pull request to create a `vX.Y.Z` tag and trigger [Release CI](./.github/workflows/release.yml).
+Publishing uses [npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers/) (OIDC) with provenance; no npm token is required.
+
 ## License
 
 [MIT](LICENSE)
