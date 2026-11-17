@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /* Type Checking */
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    /* Modules */
+    "rewriteRelativeImportExtensions": true,
+    /* Emit */
+    "inlineSourceMap": true,
+    /* Interop Constraints */
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    /* Language and Environment */
+    "lib": [
+      "ESNext"
+    ],
+    // Completeness
+    "skipLibCheck": true,
+  }
+}

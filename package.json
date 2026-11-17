@@ -1,0 +1,26 @@
+{
+  "name": "@camaro/tsconfig",
+  "version": "1.4.0",
+  "description": "Shareable TypeScript configuration presets for TypeScript projects.",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "config",
+    "shared",
+    "monorepo",
+    "camaro"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camarojs/tsconfig.git"
+  },
+  "author": "Dunn <wg0121@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camarojs/tsconfig/issues"
+  },
+  "homepage": "https://github.com/camarojs/tsconfig#readme",
+  "peerDependencies": {
+    "typescript": "^6.0.2"
+  }
+}
