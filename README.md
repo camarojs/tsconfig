@@ -1,109 +1,64 @@
 # @camaro/tsconfig
 
-A shareable TypeScript configuration with strict type checking and modern compiler options.
-
-## Features
-
-- ✅ Strict type checking configuration
-- 🔒 All strict mode options enabled
-- 🚀 Latest ESNext target and module system
-- 📦 Node.js `nodenext` module resolution support
-- 🏗️ Monorepo-specific configuration included
-- 🔄 ESM interoperability out of the box
+Shared TypeScript 7 presets with strict type checking and additional code-quality checks.
 
 ## Installation
 
+Requires TypeScript 7 (`^7.0.2`).
+
 ```bash
-npm install --save-dev @camaro/tsconfig
+npm install --save-dev @camaro/tsconfig typescript@^7.0.2
 ```
 
 Or using other package managers:
 
 ```bash
 # pnpm
-pnpm add -D @camaro/tsconfig
+pnpm add -D @camaro/tsconfig typescript@^7.0.2
 
 # yarn
-yarn add -D @camaro/tsconfig
+yarn add -D @camaro/tsconfig typescript@^7.0.2
 ```
 
 ## Usage
 
-### Base Configuration
-
-Create a `tsconfig.json` file in your project root and extend the base configuration:
+Create a `tsconfig.json` in your project root:
 
 ```json
 {
   "extends": "@camaro/tsconfig/base.json",
   "compilerOptions": {
+    "rootDir": "./src",
     "outDir": "./dist"
   },
   "include": ["src"]
 }
 ```
 
-### Monorepo Configuration
+For monorepos using project references, change `extends` to `@camaro/tsconfig/monorepo.json`. It adds `composite: true` to the base configuration.
 
-If you're using a monorepo (such as pnpm workspaces, yarn workspaces, or lerna), use the dedicated monorepo configuration:
+## Configuration
 
-```json
-{
-  "extends": "@camaro/tsconfig/monorepo.json",
-  "compilerOptions": {
-    "outDir": "./dist"
-  },
-  "include": ["src"]
-}
-```
+TypeScript 7 supplies these defaults unless overridden by your project:
 
-## Configuration Details
+| Option | Default |
+| --- | --- |
+| `strict` | `true` |
+| `target` | `ES2025` |
+| `module` | `ESNext` |
+| `moduleResolution` | `Bundler` |
 
-### base.json
+The base preset additionally enables:
 
-The base configuration includes the following strict compiler options:
+- Checks for unused/unreachable code, return paths, switch fallthrough, overrides, and unchecked indexed access.
+- `erasableSyntaxOnly`, `verbatimModuleSyntax`, and `rewriteRelativeImportExtensions`.
+- Inline source maps, `lib: ["ESNext"]`, and skipped declaration-file checking (`skipLibCheck`).
 
-#### Type Checking
-- `strict: true` - Enable all strict type checking options
-- `noImplicitReturns: true` - Ensure all code paths in functions return a value
-- `noFallthroughCasesInSwitch: true` - Prevent fallthrough errors in switch statements
-- `noUnusedLocals: true` - Report unused local variables
-- `noUnusedParameters: true` - Report unused parameters
-- `noUncheckedIndexedAccess: true` - Add undefined checks for index access
-- `noImplicitOverride: true` - Ensure overriding members use the override modifier
-- `allowUnreachableCode: false` - Disallow unreachable code
-- `allowUnusedLabels: false` - Disallow unused labels
+See [base.json](./base.json) and [monorepo.json](./monorepo.json) for all options.
 
-#### Module System
-- `module: "nodenext"` - Use Node.js ESM and CommonJS support
-- `moduleResolution: "nodenext"` - Node.js module resolution strategy
+For code executed directly by Node.js, set `"module": "NodeNext"` in your project's `compilerOptions`; module resolution follows automatically. Configure runtime-specific `lib` and `types` in your project as needed.
 
-#### Emit Options
-- `inlineSourceMap: true` - Generate inline source maps
-
-#### Interoperability
-- `esModuleInterop: true` - Enable ES module interoperability
-- `forceConsistentCasingInFileNames: true` - Enforce consistent file name casing
-
-#### Language and Environment
-- `target: "ESNext"` - Compile to the latest ECMAScript standard
-- `lib: ["ESNext"]` - Use the latest standard library type definitions
-
-#### Other
-- `skipLibCheck: true` - Skip type checking of declaration files for better performance
-
-### monorepo.json
-
-Extends `base.json` with additional options:
-- `composite: true` - Enable project references and incremental compilation, suitable for monorepo scenarios
-
-## Why Use This Configuration?
-
-1. **Strictness**: Enables all TypeScript strict checking options to catch potential issues during development
-2. **Modern**: Uses ESNext target to support the latest JavaScript features
-3. **Node.js Friendly**: Uses `nodenext` module system for perfect Node.js ESM support
-4. **Optimized Developer Experience**: Configured with reasonable error detection and code hints
-5. **Monorepo Support**: Provides dedicated monorepo configuration with project reference support
+`lib: ["ESNext"]` provides library type declarations. It does not change `target` or add runtime polyfills.
 
 ## License
 
