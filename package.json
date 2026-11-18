@@ -2,6 +2,13 @@
   "name": "@camaro/tsconfig",
   "version": "2.0.0",
   "description": "Shareable TypeScript configuration presets for TypeScript projects.",
+  "scripts": {
+    "commitlint": "commitlint --config ./eng/.commitlintrc.json --edit",
+    "cspell": "cspell --config ./eng/cspell.config.json --quiet .",
+    "lint": "npm run cspell",
+    "lint:staged": "lint-staged --config ./eng/.lintstagedrc.json",
+    "prepare": "node .husky/install.mjs"
+  },
   "keywords": [
     "typescript",
     "tsconfig",
@@ -20,6 +27,13 @@
     "url": "https://github.com/camarojs/tsconfig/issues"
   },
   "homepage": "https://github.com/camarojs/tsconfig#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^21.1.0",
+    "@commitlint/config-conventional": "^21.1.0",
+    "cspell": "^10.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8"
+  },
   "peerDependencies": {
     "typescript": "^7.0.2"
   }
