@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/camarojs/tsconfig/compare/v1.4.0...v2.0.0) (2026-11-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* TypeScript 6 is no longer supported.
+
+### Bug Fixes
+
+* configure standalone npm publishing ([#3](https://github.com/camarojs/tsconfig/issues/3)) ([dcb72df](https://github.com/camarojs/tsconfig/commit/dcb72df2a7634d58b794d15929210fee9c418827))
+
+
+### Miscellaneous Chores
+
+* require TypeScript 7 ([0136c63](https://github.com/camarojs/tsconfig/commit/0136c632c720e81045fdc93b17c4282aaf5632c0))
+
 ## [1.4.0](https://github.com/camarojs/camaro/compare/tsconfig-v1.3.0...tsconfig-v1.4.0) (2026-04-01)
 
 

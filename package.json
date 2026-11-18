@@ -1,6 +1,6 @@
 {
   "name": "@camaro/tsconfig",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Shareable TypeScript configuration presets for TypeScript projects.",
   "keywords": [
     "typescript",
