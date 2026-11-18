@@ -60,6 +60,25 @@ For code executed directly by Node.js, set `"module": "NodeNext"` in your projec
 
 `lib: ["ESNext"]` provides library type declarations. It does not change `target` or add runtime polyfills.
 
+## Development
+
+Use the current Node.js LTS release, as CI does.
+
+```bash
+npm ci
+npm run lint
+npm pack --dry-run
+```
+
+`npm ci` installs Husky hooks for local development:
+
+- Before a commit, lint-staged checks spelling in staged files.
+- Commit messages must follow Conventional Commits.
+- Before a push, the full spelling check runs.
+
+CI, production-only installs, and `HUSKY=0` skip hook installation.
+Development tooling and Git hooks are excluded from the published package.
+
 ## Publishing
 
 Merge the release-please pull request to create a `vX.Y.Z` tag and trigger [Release CI](./.github/workflows/release.yml).
